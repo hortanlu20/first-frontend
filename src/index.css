@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Narin", sans-serif;
+}
+
+body {
+  @apply text-yayyuBlack;
+}
+
+a {
+  @apply hover:text-yayyuYellow duration-200 ease-in;
+}
+
+@font-face {
+  font-family: "Narin";
+  src: local("Narin"), url(../public/fonts/NarinLight.otf) format("opentype");
+  font-weight: 300;
+}

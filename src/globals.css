@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Narin", sans-serif;
+}
+
+body {
+  @apply text-yayyuBlack;
+}
+
+a {
+  @apply hover:text-yayyuYellow duration-200 ease-in;
+}
+
+@font-face {
+  font-family: "Narin";
+  src: local("Narin"), url(../public/fonts/NarinLight.otf) format("opentype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Narin";
+  src: local("Narin"), url(../public/fonts/NarinRegular.otf) format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Narin";
+  src: local("Narin"), url(../public/fonts/NarinMedium.otf) format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Narin";
+  font-weight: 900;
+  src: local("Narin"), url(../public/fonts/NarinBold.otf) format("opentype");
+}
+
+.container {
+  @apply max-w-[1100px] mx-auto px-5 lg:px-0;
+}
+
+.header-menu-link {
+  @apply uppercase text-yayyuBlack hover:text-yayyuYellow text-sm font-medium cursor-pointer;
+}
+
+.pageHeader {
+  background: url("/public/images/header.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error {
+  @apply text-red-500 text-xs;
+}
+
+.primary-input {
+  @apply rounded-sm border-[#cfcece] border-[2px] placeholder:text-sm;
+}
+
+.primary-btn {
+  @apply bg-black text-white text-sm hover:bg-yayyuYellow hover:text-black text-center cursor-pointer duration-300 ease-in;
+}
+
+.secondary-btn {
+  @apply bg-transparent border-[2px] border-black text-black text-sm hover:bg-black hover:text-white duration-300 ease-in text-center cursor-pointer;
+}
+
+.shop-img {
+  @apply h-[150px] lg:h-[300px] hover:scale-90 duration-500 ease-in-out;
+}
+
+.add-btn {
+  @apply bg-yayyuYellow h-12 w-9 rounded-md flex items-center justify-center text-black font-semibold hover:bg-black hover:text-yayyuYellow cursor-pointer text-[18px];
+  box-shadow: 3px 3px 4px #000000ae;
+}
